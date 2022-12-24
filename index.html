@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+
+    <title>Document</title>
+    <style>
+        
+        .container{
+            background-image: url(130.jpg);
+            height: 100vh;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+
+        }
+
+        @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+        #pot {
+            bottom: 15%;
+            position: absolute;
+            -webkit-animation: linear infinite;
+            -webkit-animation-name: run;
+            -webkit-animation-duration: 50s;
+          }
+          @-webkit-keyframes run {
+            0% {
+              left: 0;
+            }
+            48% {
+              -webkit-transform: rotateY(0deg); 
+            }
+            50% { 
+              left: calc(100% - 100px);
+              -webkit-transform: rotateY(180deg); 
+            }
+            /*98% {
+              -webkit-transform: rotateY(180deg); 
+            }*/
+            100% {
+              left: 0;    
+               -webkit-transform: rotateY(0deg);
+            }
+          }
+
+          .waviy {
+           /* position: relative;*/
+            -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0,0,0,.2));
+            font-size: 60px;
+            
+            text-align: center;
+            
+          }
+          .waviy span {
+            font-family: 'Alfa Slab One', cursive;
+            position:relative;
+            display: inline-block;
+            color: #fff;
+            font-weight: bolder;
+            /*text: center;*/
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 200px;
+            text-transform: uppercase;
+            animation: waviy 1s infinite;
+            animation-delay: calc(.1s * var(--i));
+            
+          }
+          @keyframes waviy {
+            0%,40%,100% {
+              transform: translateY(0)
+            }
+            20% {
+              transform: translateY(-20px)
+            }
+          }
+
+    </style>
+</head>
+<body>
+    <div class="container bg-image">
+      <div class=" mt-5 text-center">
+        <div class="waviy justify-content-center ">
+        <span style="--i:1" class="">M</span>
+        <span style="--i:2">E</span>
+        <span style="--i:3">R</span>
+        <span style="--i:4">R</span>
+        <span style="--i:5">Y</span>
+       &nbsp;
+        <span style="--i:6">C</span>
+        <span style="--i:7">H</span>
+        <span style="--i:8">R</span>
+        <span style="--i:9">I</span>
+        <span style="--i:10">S</span>
+        <span style="--i:11">T</span>
+        <span style="--i:12">M</span>
+        <span style="--i:13">A</span>
+        <span style="--i:14">S</span>
+        
+     
+       </div>
+      </div>
+        <div class="position-absolute top-50 start-50 translate-middle-x text-center" id="pot"><img src="c1.png" alt="" class="img-responsive"></div>
+    </div>
+    <embed src="m1.mp3.mp3" loop="true" autostart="true" width="2" height="0">
+</body>
+</html>
